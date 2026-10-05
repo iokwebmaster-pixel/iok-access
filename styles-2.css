@@ -1,0 +1,563 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i&display=swap');
+
+:root {
+    --font-primary: 'Lato', sans-serif !important;
+    --primary-font: 'Lato', sans-serif !important;
+    /* Add any other font variables you find here, e.g. --secondary-font */
+}
+
+body.evo {
+    /* --- Font & Primary Colors --- */
+    --font-primary: 'Lato', sans-serif !important;
+    --primary-font: 'Lato', sans-serif !important;
+    --active-color: #cea52d !important;
+    --active-color-hover: 206, 165, 45 !important;
+    --highlight-color: #cea52d !important;
+    --link-color: #b89529 !important;
+    --link-color-hover: #cea52d !important;
+
+    /* --- Background Colors --- */
+    --body-bg-color: #f4f2ef !important;
+    --content-bg-color: #f4f2ef !important;
+    --content-light-bg-color: #fffef9 !important;
+    --evo-header-bg-color: #f4f2efeb !important;
+    --evo-sub-side: #ffffff !important;
+    --popup-bg: #ffffff !important;
+    --popup-widget-bg: #f4f2ef !important;
+    --popup-bg-container: #fff !important;
+    --dropdown-bg: #fffffff7 !important;
+    --left-bar-bg: #333333 !important;
+    --section-nav-bg: #ffffff !important;
+    --section-nav-gray: #f5f2ea !important;
+    --nav-pullout-bg: #fffffff2 !important;
+    --light-gray-bg: #f4f2ef !important;
+    --tags-bg: #f5f2ea !important;
+    --alert-bg: #fff9e6 !important;
+    --input-bg: #fff !important;
+    --disabled-bg: #f5f2ea !important;
+    --th-bg-color: #f4f2ef !important;
+    --editor-bg-color: #fff !important;
+    --invert-bg-color: #fff !important;
+    --copilot-bg: #fff !important;
+    --copilot-bg-msg: #f5f2ea !important;
+    --copilot-chat-bg: #f9fbff !important;
+    --copilot-chat-input: #f5f2ea !important;
+
+    /* --- Text Colors --- */
+    --main-text-color: #333333 !important;
+    --light-text-color: #444444 !important;
+    --light-grey-text-color: #666666 !important;
+    --placeholder-text: #888888 !important;
+    --text-white: #fff !important;
+    --left-bar-text: #e2cd98 !important;
+    --color-gray: #666666 !important;
+
+    /* --- Button Colors --- */
+    --button-color: #ffffff !important;
+    --button-color-2: #333333 !important;
+    --button-color-3: #cea52d !important;
+    --button-color-4: #ffffff !important;
+    --button-bg-2: #f5f2ea !important;
+    --button-bg-3: #ffffff !important;
+    --button-bg-4: #333333 !important;
+    --button-dark-bg: 51, 51, 51 !important;
+    --button-gray-bg: #f5f2ea !important;
+    --button-gray-bg-hover: #edeae1 !important;
+    --button-hover-bg: #f5f2ea !important;
+    --button-hover-bg-2: #edeae1 !important;
+    --copilot-btn-light-hover: #edeae1 !important;
+    --copilot-btn-light-visited: #f5f2ea !important;
+
+    /* --- Border & Shadow Colors --- */
+    --main-border-color: #e9e4d9 !important;
+    --border-darker-color: #dcd6c8 !important;
+    --border-color-light: #f5f2ea !important;
+    --border-color-bg: #ffffff !important;
+    --input-border-color: #dcd6c8 !important;
+    --button-border-color: #e9e4d9 !important;
+    --button-border-color-3: #cea52d !important;
+    --table-border-color: #f5f2ea !important;
+    --table-border-color-highlight: #cea52d !important;
+    --user-table-border-color: #dcd6c8 !important;
+    --tile-shadow: 0px 5px 10px -2px rgba(51, 51, 51, 0.04) !important;
+    --box-shadow: 0px 5px 6px 0px rgba(51, 51, 51, 0.04) !important;
+    --box-shadow-hover: 0px 5px 6px 0px rgba(51, 51, 51, 0.08) !important;
+    --box-shadow-btn: 0px 3px 5px 0px rgba(51, 51, 51, 0.02) !important;
+    --box-shadow-btn-hover: 0px 5px 6px 0px rgba(51, 51, 51, 0.08) !important;
+    --box-shadow-heavy: 0px 5px 6px 0px rgba(51, 51, 51, 0.08) !important;
+    --box-shadow-inset: inset 0 2px 5px rgba(51, 51, 51, 0.08) !important;
+
+    /* --- Table & Interaction Colors --- */
+    --table-selected: #fff9e6 !important;
+    --table-row-alternate: #fdf8ef !important;
+    --hover-color: #f5f2ea6e !important;
+    --left-nav-bg: #fff !important;
+    --left-nav-bg-hover: #f4f2ef !important;
+    --nav-button-hover: #0000006e !important;
+    --tool-bar-color: #ffffffeb !important;
+    --scroll-bar-color: #c4bca9 !important;
+    --scroll-bar-bg-color: #f4f2ef !important;
+
+    /* --- Status & Message Colors --- */
+    --progress-bar-color: #cea52d !important;
+    --success-color: #00a572 !important;
+    --color-green: #00a572 !important;
+    --color-blue: #5da9d6 !important;
+    --color-purple: #A584F3 !important;
+    --color-yellow: #FCB707 !important;
+    --color-red: #F46060 !important;
+    --error-msg-bg: #ffe9e9 !important;
+    --error-msg-text: #c72e2c !important;
+    --color-red-bg: rgb(244, 96, 96) !important;
+    --color-green-bg: rgb(0, 165, 114) !important;
+    --color-overlay-bg: rgba(51, 51, 51, 0.67) !important;
+    --color-lightgray: #f4f2ef !important;
+    --bullet-color: #dcd6c8 !important;
+
+    /* --- Font Sizes & Weights (Generally Unchanged) --- */
+    --main-border-r: 10px;
+    --border-r-rounded: 50px;
+    --box-shadow-transition: box-shadow .3s ease-in-out, border .3s ease-in-out;
+    --widget-text-font-size: .85rem;
+    --font-size-smaller: .7rem;
+    --font-size-small: .75rem;
+    --font-size-regular: .8rem;
+    --font-size-medium: .85rem;
+    --font-size-large: .9rem;
+    --font-size-larger: 1rem;
+    --font-weight-thin: 300;
+    --font-weight-light: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-bolder: 800;
+}
+
+body.evo,
+body.evo * {
+    font-family: 'Lato', sans-serif !important;
+}
+
+body.evo h1,
+body.evo h2,
+body.evo h3,
+body.evo h4,
+body.evo h5,
+body.evo h6 {
+    font-family: 'Lato', sans-serif !important;
+}
+
+
+
+/* -----------------------New Home Page------------------------- */
+
+/* Scope all styling */
+#iok__nh.iok__nh {
+    --brand-gold: #cea52d;
+    --title: #333333;
+    --body: #7f7f7f;
+    --surface: #ffffff;
+    --card: #fafafa;
+    --ring: rgba(0, 0, 0, .06);
+    color: var(--body);
+    line-height: 1.6;
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Local reset */
+#iok__nh * {
+    box-sizing: border-box;
+}
+
+/* Typography */
+#iok__nh .h1__nh,
+#iok__nh .h2__nh,
+#iok__nh .h3__nh,
+#iok__nh h4 {
+    color: var(--title);
+    margin: 0 0 .5rem;
+    line-height: 1.2;
+}
+
+#iok__nh .h1__nh {
+    font-size: clamp(3rem, 3.2vw, 4rem) !important;
+    font-weight: 900;
+    max-width: 500px;
+}
+
+#iok__nh .h2__nh {
+    font-size: clamp(2rem, 2.2vw, 3rem) !important;
+    font-weight: 700;
+}
+
+#iok__nh .h3__nh {
+    font-size: clamp(1.25rem, 1.6vw, 2rem) !important;
+    font-weight: 700;
+}
+
+#iok__nh h4 {
+    font-size: 1.4rem !important;
+    font-weight: 700;
+}
+
+#iok__nh p {
+    margin: 0 0 1.2rem;
+}
+
+#iok__nh .lead__nh {
+    max-width: 500px;
+    font-size: 1.25rem !important;
+    line-height: 1.7;
+}
+
+#iok__nh .larger__desc_l__nh {
+    font-size: 1.35rem !important;
+    line-height: 1.75;
+}
+
+#iok__nh .larger__desc_m__nh {
+    font-size: 1.15rem !important;
+    line-height: 1.75;
+}
+
+#iok__nh a {
+    color: var(--brand-gold);
+    text-decoration: none;
+}
+
+#iok__nh a:hover {
+    text-decoration: underline;
+}
+
+/* Layout */
+#iok__nh .wrap__nh {
+    width: min(1100px, 92%);
+    margin-inline: auto;
+    padding: 4rem 0;
+}
+
+/* Hero */
+#iok__nh .hero__nh {
+    background: linear-gradient(45deg, #f4f2e9, #f4efd9);
+    padding: 6rem 0 5rem;
+}
+
+#iok__nh .hero__nh .wrap__nh {
+    display: grid;
+    gap: 1rem;
+    justify-items: start;
+}
+
+#iok__nh .btn__nh {
+    display: inline-block;
+    padding: .85rem 1.15rem;
+    border: 1px solid var(--brand-gold);
+    color: var(--title);
+    border-radius: .6rem;
+    background: #fffdf7;
+    transition: transform .1s ease, background .2s ease;
+}
+
+#iok__nh .btn__nh:hover {
+    transform: translateY(-1px);
+    background: #fffaf0;
+}
+
+/* Sections */
+#iok__nh .section__nh {
+    background: var(--surface);
+}
+
+#iok__nh .section--alt__nh {
+    background: #fffaf1;
+}
+
+/* Background pattern */
+#iok__nh .section--placeholder__nh {
+    background-image:
+        radial-gradient(ellipse at 20% -10%, rgba(0, 0, 0, .015), transparent 40%),
+        radial-gradient(ellipse at 120% 10%, rgba(0, 0, 0, .02), transparent 40%);
+}
+
+/* Section Head */
+#iok__nh .section__head__nh {
+    margin-bottom: 1.5rem;
+}
+
+#iok__nh .section__head__nh p {
+    max-width: 80ch;
+}
+
+/* Campus blocks */
+#iok__nh .campus__nh {
+    margin: 2rem 0;
+}
+
+#iok__nh .campus__head__nh {
+    margin: 1rem 0 2rem;
+}
+
+/* Grid & Cards */
+#iok__nh .grid__nh {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+}
+
+#iok__nh .card__nh {
+    grid-column: span 12;
+    background: var(--card);
+    border-radius: 1rem;
+    padding: 1.25rem;
+    border: 1px solid var(--ring);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, .04);
+    outline: 2px solid color-mix(in srgb, var(--accent) 25%, transparent);
+}
+
+@media (min-width:700px) {
+    #iok__nh .card__nh {
+        grid-column: span 6;
+    }
+}
+
+@media (min-width:1000px) {
+    #iok__nh .card__nh {
+        grid-column: span 4;
+    }
+}
+
+/* Card details */
+#iok__nh .badge__nh {
+    display: inline-flex;
+    align-items: center;
+    gap: .35rem;
+    padding: .35rem .6rem;
+    border-radius: .55rem;
+    font-size: .9rem !important;
+    font-weight: 600;
+    color: var(--accent);
+    background: color-mix(in srgb, var(--accent) 12%, #fff);
+    border: 1px solid color-mix(in srgb, var(--accent) 28%, transparent);
+}
+
+#iok__nh .badge--ghost__nh {
+    background: transparent !important;
+    border: 1px dashed color-mix(in srgb, var(--accent) 40%, transparent) !important;
+    color: var(--accent) !important;
+}
+
+#iok__nh .card__badge__below__nh {
+    display: inline-block;
+    margin-top: 0.25rem;
+    margin-bottom: 0.85rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.5rem;
+    background: color-mix(in srgb, var(--accent) 12%, #fff);
+    border: 1px solid color-mix(in srgb, var(--accent) 25%, transparent);
+    color: var(--accent);
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+#iok__nh .campus__note__nh {
+    margin-top: 2rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid #e0e0e0;
+}
+
+#iok__nh .note__text__nh {
+    font-size: 0.95rem;
+    line-height: 1.65;
+    color: #777;
+    max-width: 750px;
+}
+
+#iok__nh .note__text__nh a.link__nh {
+    color: var(--accent, #cea52d);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+/* Access badge (Onsite. Online. On-Demand.) */
+.card__meta__nh {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: .75rem;
+}
+
+#iok__nh .access_badge__nh {
+    display: inline-flex;
+    align-items: center;
+    gap: .4rem;
+    padding: .35rem .6rem;
+    border-radius: .55rem;
+    font-size: 1.05rem !important;
+    font-weight: 600;
+    color: var(--title);
+    background: #ede9e2;
+    border: 1px solid #d8d4cd;
+    margin-bottom: 1.5rem !important;
+}
+
+#iok__nh .card__title__nh {
+    color: var(--title);
+    margin-bottom: .75rem;
+}
+
+#iok__nh .card__subtitle__nh {
+    font-size: 1rem !important;
+    color: #4b4b4b;
+    margin: -.25rem 0 .5rem;
+}
+
+#iok__nh .card__list__nh {
+    list-style: none;
+    padding: 0;
+    margin: .2rem 0 .75rem;
+    font-size: 1rem !important;
+}
+
+#iok__nh .card__desc__nh {
+    margin-bottom: .9rem;
+    font-size: 1rem !important;
+}
+
+#iok__nh .card__link__nh {
+    font-weight: 600;
+    color: var(--brand-gold);
+    text-underline-offset: 2px;
+}
+
+#iok__nh .card__link__nh:hover {
+    text-decoration: underline;
+}
+
+#iok__nh strong {
+    color: var(--title);
+    font-weight: 700;
+}
+
+@media (max-width:380px) {
+    #iok__nh .wrap__nh {
+        padding: 2rem 0;
+    }
+
+    #iok__nh .btn__nh {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+/* END New Home Page */
+
+/* Winter Intensive (Updated the styling for the Khateeb Workshop but kept the original sleector labels. The selectors could be relabeled to be more general if needed.) */
+#iok__nh .winter__section__nh {
+    background-color: #fdefd1;
+    background-image:
+        linear-gradient(rgba(253, 239, 209, 0.90),
+            rgba(253, 239, 209, 0.85)),
+        url('https://instituteofknowledge.com/wp-content/uploads/2026/01/Khateeb-Workshop-Course-Background.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#iok__nh .winter__section__nh .wrap__nh {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+#iok__nh .winter__content__nh {
+    --accent: #52799b;
+
+    position: relative;
+    border-radius: 1.25rem;
+    padding: 2.5rem 2.25rem;
+
+    /* glassmorphic background */
+    background: rgba(255, 253, 247, 0.78);
+    border: 1px solid rgba(255, 255, 255, 0.65);
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.16);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+}
+
+#iok__nh .winter__badges__nh {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: .75rem;
+    margin-bottom: 1.75rem;
+}
+
+#iok__nh .winter__badge--primary__nh {
+    font-size: 1rem !important;
+}
+
+#iok__nh .winter__badge--secondary__nh {
+    font-size: .95rem !important;
+}
+
+/* image + text side by side */
+#iok__nh .winter__layout__nh {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 1.3fr);
+    gap: 2rem;
+    align-items: center;
+}
+
+#iok__nh .winter__media__nh {
+    width: 100%;
+}
+
+#iok__nh .winter__img__nh {
+    display: block;
+    width: 100%;
+    height: auto;
+    /* keeps 900Ã—675 ratio */
+    border-radius: 1.1rem;
+    object-fit: cover;
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.18);
+}
+
+#iok__nh .winter__body__nh {
+    width: 100%;
+}
+
+#iok__nh .winter__btn__nh {
+    margin-top: 1.25rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 800px) {
+    #iok__nh .winter__content__nh {
+        padding: 2rem 1.75rem;
+    }
+
+    #iok__nh .winter__layout__nh {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    #iok__nh .winter__media__nh {
+        order: -1;
+        /* image above text on small screens */
+    }
+}
+
+@media (max-width: 600px) {
+    #iok__nh .winter__badges__nh {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #iok__nh .winter__btn__nh {
+        width: 100%;
+        text-align: center;
+    }
+}
